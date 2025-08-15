@@ -1,0 +1,81 @@
+.bot-list {
+  padding: 1.5rem;
+  background-color: #f4f6f8;
+  border-radius: 4px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.bot-list-title {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Grid layout for bots */
+.bot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.bot-card {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bot-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.bot-name {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0077cc;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.bot-name:hover {
+  text-decoration: underline;
+}
+
+.bot-details {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.bot-version {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.copy-btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.copy-btn:hover {
+  background: #005fa3;
+}
+
+

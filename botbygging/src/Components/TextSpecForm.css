@@ -1,0 +1,119 @@
+/* Two-column layout */
+.tsf-container {
+  display: flex;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  align-items: flex-start;
+}
+
+/* Left panel (form) */
+.tsf-wrap {
+  flex: 2;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.tsf-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tsf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.tsf-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.tsf-field span {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.tsf-field input,
+.tsf-field textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.tsf-btn {
+  padding: 0.6rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tsf-btn:hover {
+  background: #005fa3;
+}
+
+.tsf-result {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+/* Right panel (info) */
+.tsf-info {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.tsf-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.tsf-info ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.tsf-info li {
+  margin-bottom: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .tsf-container {
+    flex-direction: column;
+  }
+}
+
+.tsf-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tsf-copy-btn {
+  padding: 0.3rem 0.6rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.tsf-copy-btn:hover {
+  background: #005fa3;
+}
