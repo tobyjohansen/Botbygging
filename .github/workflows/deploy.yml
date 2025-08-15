@@ -49,6 +49,12 @@ jobs:
         working-directory: ${{ env.APP_DIR }}
         run: cp dist/index.html dist/404.html
 
+      
+      - name: Remove CNAME if exists
+        working-directory: ${{ env.APP_DIR }}
+        run: rm -f dist/CNAME
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
